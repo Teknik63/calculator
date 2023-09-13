@@ -1,0 +1,26 @@
+:root
+{
+    --bgcolor: #2d248a;
+    --button: #d45d79;
+    --submit: #e9e2d0;
+    --area: #fff9e0;
+}
+
+html
+{
+    margin: 0;
+    padding: 0;
+background-color: var(--bgcolor);
+}
+
+.container
+{
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    height: 100%;
+}
+.row
+{
+
+}
