@@ -3,6 +3,7 @@ let clear = document.querySelector(".clear");
 let screen = document.querySelector(".screen");
 let cal = document.querySelector(".cal");
 let equal = "";
+let total = 0;
 
 // btn.addEventListener("keypress", myScript);
 
@@ -73,7 +74,8 @@ cal.addEventListener("click", function () {
   else
   {
     equal = eval(equal);
-    screen.innerHTML = equal;
+    total = Number(equal);
+    screen.innerHTML = total.toFixed(2);
   }
 
  
