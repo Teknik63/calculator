@@ -13,14 +13,98 @@ html
 background-color: var(--bgcolor);
 }
 
-.container
+body
 {
     display: flex;
-    border: 1px solid white;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+    height: 100vh;
 }
-.row
-{
 
+
+
+.container
+{
+    background: gray;
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+
+.screen
+{
+    text-align: right;
+    background-color: var(--area);
+    font-size: 3em;
+    overflow: hidden;
+    padding: 5px;
+}
+
+
+.btns
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+
+.btn
+{
+height: 2.5em;
+width: 2.5em;
+background-color: black;
+color: white;
+align-items: center;
+display: flex;
+justify-content: center;
+cursor: pointer;
+border-radius: .5em;
+box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+font-size: 30px;
+}
+
+.btn:active
+{
+    background-color: white;
+    color: black;
+}
+
+.clear
+{
+    height: 2.5em;
+width: 2.5em;
+background-color: red;
+color: white;
+align-items: center;
+display: flex;
+justify-content: center;
+cursor: pointer;
+border-radius: .5em;
+box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+font-size: 30px;
+}
+
+.clear:active
+{
+    background-color: white;
+    color: red;
+}
+
+.cal
+{
+    height: 2.5em;
+    width: 12em;
+    background-color: green;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: .5em;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+    font-size: 30px;
+    grid-column: span 4;
 }
